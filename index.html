@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PISTONS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://raw.githubusercontent.com/peterhry/CircleType/master/dist/circletype.min.js"></script>
+</head>
+
+<body>
+    <div class="alert">
+        <p>FREE SHIPPING ON ALL ORDERS</p>
+    </div>
+    <p class="feedback">FEEDBACK</p>
+    <nav>
+        <img src="images/logo.png" class="logo" alt="">
+        <ul class="hidding_in_phone">
+            <li class="">
+                <a class="" href="#"><b>NEW</b></a>
+            </li>
+            <li class="">
+                <a class="" href="#"><b>BRANDS</b></span></a>
+            </li>
+            <li class="">
+                <a class="" href="#"><b>COLLECTIONS</b></span></a>
+            </li>
+            <li class="">
+                <a class="" href="#"><b>ACCESORIES</b></span></a>
+            </li>
+            <li class="">
+                <a class="" href="#five"><b>ABOUT</b></span></a>
+            </li>
+        </ul>
+        <div class="last-part-nav">
+            <img src="images/shopping_vector.png" alt="">
+            <a href=""><img src="images/Vector.png" alt=""></a>
+            <!-- on click, call a function that toggle mobile_nav -->
+            <a class="hidding_in_lap" onclick="toggleMobileNav()"><img src="logos/Vector.png" alt=""></a>
+        </div>
+        <div class="mobile_nav mobile_hidden">
+            <a onclick="toggleMobileNav()"><img src="logos/cross.png" alt=""></a>
+            <ul>
+                <li class="">
+                    <a class="" href="#"><b>NEW</b></a>
+                </li>
+                <li class="">
+                    <a class="" href="#"><b>BRANDS</b></span></a>
+                </li>
+                <li class="">
+                    <a class="" href="#"><b>COLLECTIONS</b></span></a>
+                </li>
+                <li class="">
+                    <a class="" href="#"><b>ACCESORIES</b></span></a>
+                </li>
+                <li class="">
+                    <a class="" href="#five"><b>ABOUT</b></span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="zero"></div>
+    <div class="one">
+        <div class="left">
+            <img src="images/11.png" alt="">
+            <div class="text1">
+                <h2 class="curve"  style="font-size: 3vw;">MADE FOR YOU</h2>
+                <br>
+                <h2  style="font-size: 3vw;">PISTONS</h2>
+            </div>
+        </div>
+        <div class="left">
+            <img src="images/12.png" alt="">
+            <div class="text2">
+                <h2>YOU WERE MADE TO MAKE AN IMPACT.</h2>
+                <button>SHOP PENS</button>
+            </div>
+        </div> 
+    </div>
+    <div class="two">
+        <div class="left">
+            <img src="images/13.png" alt="">
+            <div class="text1">
+                <h2 class="curve">MADE FOR THE BEST CHANGE MAKER</h2>
+                <button>SHOP BRANDS</button>
+            </div>
+        </div>
+        <div class="left"><img src="images/14.png" alt=""></div>
+    </div>
+    <div class="three">
+        <div class="left"><img src="images/15.png" alt=""></div>
+        <div class="left">
+            <img src="images/16.png" alt="">
+            <div class="text2">
+                <h2>SAVOUR THE PRESENT</h2>
+                <button>SHOP MONT BLANC</button>
+            </div>
+        </div>
+    </div>
+        <div class="full">
+            <img src="images/21.png" alt="">
+            <div class="black"></div>
+            <div class="text">
+                <h2>WHERE QUALITY MEETS CLASS</h2><br>
+                <h2 style="font-size: 3vw;">MADE FOR YOU</h2>
+                <h2 style="font-size: 3vw;">PISTONS</h2>
+                <button>SHOP THE FALL 2023 COLLECTION</button>
+            </div>
+        </div>
+    <div class="five" id="five">
+        <div class="five-1">
+            <div class="five-left"><img src="images/31.png" alt=""></div>
+            <div class="five-left">
+                <h1>ABOUT PISTONS</h1>
+                <p>Established in 1897, our beloved fountain pen haven, 'PISTONS,' has been a haven for pen enthusiasts for generations. With a century-long dedication to fine writing instruments, we've bridged tradition and modernity, offering a curated selection of vintage and contemporary fountain pens. Our little shop, nestled in the heart of town, continues to inspire a love for the art of writing, connecting past and present through the timeless elegance of ink on paper.</p>
+            </div>
+        </div>
+        <div class="five-2">
+            <hr>
+            <h1>TESTIMONIAL</h1>
+            <br><br><br>
+            <div class="review" id="testimonials">
+            </div>
+            <br><br>
+            <div class="end">
+                <br><h2>PISTONS</h2>
+                <h2>STAY CONNECTED</h2><br>
+                <div class="logos">
+                    <img src="logos/1.png" alt="">
+                    <img src="logos/2.png" alt="">
+                    <img src="logos/3.png" alt="">
+                    <img src="logos/4.png" alt="">
+                    <img src="logos/5.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+        // read the json from https://elitefit4you.com/test-api/testimonials.json, 
+        var dat = {
+    "testimonials": [
+        {
+            "name": "Alex P.",
+            "message": "I stumbled upon this shop, and their selection blew me away. The user-friendly website made my shopping experience a breeze!",
+            "image": "https://i.ibb.co/vmYY6tY/img1.png"
+        },
+        {
+            "name": "Emily S.",
+            "message": "The checkout process was seamless, and the responsive design worked flawlessly on my mobile device. I'll definitely be coming back!",
+            "image": "https://i.ibb.co/k29V4KN/img2.png"
+        },
+        {
+            "name": "David R.",
+            "message": "Their site's intuitive navigation made finding the perfect pen a joy. Five stars for both their products and web design!",
+            "image": "https://i.ibb.co/Mcz1SWT/img3.png"
+        },
+        {
+            "name": "Lisa M.",
+            "message": "I appreciate the attention to detail in both their pens and website. A visually stunning and user-focused online shop.",
+            "image": "https://i.ibb.co/94fW8xZ/img4.png"
+        }
+    ]
+}
+        var testimonialsDiv = document.getElementById("testimonials");
+        dat.testimonials.forEach(function (testimonial) {
+            var testimonialContainer = document.createElement("div");
+            testimonialContainer.className = "testimonial";
+
+            var imageElement = document.createElement("img");
+            imageElement.src = testimonial.image;
+                        
+            var divElement = document.createElement("div");
+            divElement.className = "text";
+
+            var nameElement = document.createElement("h2");
+            nameElement.innerText = "Name: " + testimonial.name;
+
+            var messageElement = document.createElement("p");
+            messageElement.innerText = "Message: " + testimonial.message;
+
+            testimonialContainer.appendChild(imageElement);
+            divElement.appendChild(nameElement);
+            divElement.appendChild(messageElement);
+            testimonialContainer.appendChild(divElement);
+
+            testimonialsDiv.appendChild(testimonialContainer);
+        });
+        
+
+        // define funciton toggleMobileNav() which finds mobile_nav and toggles mobile_hidden class in it
+        function toggleMobileNav() {
+            var mobileNav = document.querySelector(".mobile_nav");
+            mobileNav.classList.toggle("mobile_hidden");
+            // prevent default behavior of the link
+            event.preventDefault();
+        }
+    </script>
+</body>
+
+</html>
